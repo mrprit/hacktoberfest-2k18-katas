@@ -4,7 +4,7 @@ export const BubbleSort = numbers => {
   while (work) {
     let swapped = false;
     for (let i = 0; i < sortedArray.length - 1; i++) {
-      if (sortedArray[i] > sortedArray[i + 1]) {
+      if (sortedArray[i + 1] < sortedArray[i]) {
         let temp = sortedArray[i];
         sortedArray[i] = sortedArray[i + 1];
         sortedArray[i + 1] = temp;
